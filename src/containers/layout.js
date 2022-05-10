@@ -1,8 +1,8 @@
 import logo from '../image/logo.png';
-import {FaBars} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import '../css/layout.css';
 import Sidebar from '../components/sidebar.js';
-import {BrowserRouter,Routes,Route,} from "react-router-dom";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Booking from './booking';
 import Account from './account';
 import Refer from './refer.js';
@@ -10,14 +10,14 @@ import Contact from './contact.js';
 import FAQ from './faq.js';
 
 const Layout = () => {
-        return ( 
+        return (
                 <BrowserRouter>
                         <div className="frame">
                                 <div className='container'>
                                         <div className="header">
-                                                <img src={logo} alt=""/>
-                                                <span className='span_right'>Choose a city<FaBars /></span>               
-                                        </div> 
+                                                <img src={logo} alt="" />
+                                                <span className='span_right'>Choose a city<FaBars /></span>
+                                        </div>
                                         <div className="side">
                                                 <Sidebar />
                                         </div>
@@ -28,7 +28,7 @@ const Layout = () => {
                                                         <Route exact path="/refer" element={<Refer />} />
                                                         <Route exact path="/account" element={<Account />} />
                                                         <Route exact path="/contact" element={<Contact />} />
-                                                        <Route exact path="/faq" element={<FAQ />} /> 
+                                                        <Route exact path="/faq" element={<FAQ />} />
                                                 </Routes>
                                         </div>
                                 </div>
@@ -36,5 +36,5 @@ const Layout = () => {
                 </BrowserRouter>
         );
 }
- 
+
 export default Layout;

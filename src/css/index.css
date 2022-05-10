@@ -9,7 +9,7 @@ code {
         font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-:root{
+:root {
         --link_color: #168EEA;
         --highlight: #786AFF;
         --primary: #59626A;

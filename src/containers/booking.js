@@ -1,10 +1,10 @@
 import '../css/booking.css';
-import { FaChevronRight,FaRegCheckCircle,FaRegClock,FaRegCalendarCheck, FaReceipt,FaStar,FaRegPaperPlane } from "react-icons/fa";
+import { FaChevronRight, FaRegCheckCircle, FaRegClock, FaRegCalendarCheck, FaReceipt, FaStar, FaRegPaperPlane } from "react-icons/fa";
 import room from '../image/room.png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Booking = () => {
-        return (  
+        return (
                 <div className="booking-body" >
                         <div className='description'>
                                 <h1>Bookings</h1>
@@ -13,7 +13,7 @@ const Booking = () => {
                                 <a className='link with_icon' href=""><FaChevronRight />Learn more about our premium subscription</a>
                         </div>
                         <div className="room ">
-                                <img src={room} alt="room"/>
+                                <img src={room} alt="room" />
                                 <div className="room-details with_icon">
                                         <h4>The Green View</h4>
                                         <p><FaRegCheckCircle />Booking request recieved</p>
@@ -42,5 +42,5 @@ const Booking = () => {
                 </div>
         );
 }
- 
+
 export default Booking;

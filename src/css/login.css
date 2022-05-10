@@ -1,37 +1,40 @@
-.body{
+.body {
         display: flex;
         margin: 0%;
         font-size: var(--fs14);
         text-align: left;
 }
 
-@media (max-width:1000px){
-        .body{
-            display: block;
+@media (max-width:1000px) {
+        .body {
+                display: block;
         }
-        img{
-            height: auto;
+
+        img {
+                height: auto;
         }
-        .sidebar{
-            min-width: 390px;
+
+        .sidebar {
+                min-width: 390px;
         }
 }
 
-.sidebar{
+.sidebar {
         flex: 4;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
 }
 
-.sidebar .upper{
+.sidebar .upper {
         flex: 1;
 }
 
-.desc,.form{
+.desc,
+.form {
         padding: 0 5vw;
 }
 
-.key{
+.key {
         margin: 4em 0 2em 5vw;
         position: relative;
         width: 50px;
@@ -42,7 +45,7 @@
         box-shadow: 1.5px 1.5px var(--shadow);
 }
 
-.key svg{
+.key svg {
         color: white;
         width: 20px;
         height: 20px;
@@ -50,39 +53,39 @@
         padding: 22px 12px 20px 30px;
 }
 
-.img{
+.img {
         flex: 7;
         max-width: 100%;
         height: 100vh;
 }
 
-.desc h1{
+.desc h1 {
         font-weight: 500;
         font-size: 18px;
         margin: 20px 0;
 }
 
-.desc p{
+.desc p {
         color: var(--primary);
         margin-bottom: 40px;
 }
 
-.form{
+.form {
         background-color: var(--background);
-        flex: 1; 
+        flex: 1;
 }
 
-.form .pw-label a{
+.form .pw-label a {
         font-size: var(--fs12);
 }
 
 
-.footer{
+.footer {
         text-align: center;
         font-weight: normal;
         color: var(--primary);
 }
 
-.error{
+.error {
         color: red;
 }

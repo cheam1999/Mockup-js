@@ -1,59 +1,60 @@
-.account-body .form-box{
+.account-body .form-box {
         box-shadow: 2px 2px 2px 2px var(--shadow);
         display: block;
         background-color: var(--background);
         border-radius: var(--border_radius);
 }
 
-.form-box table{
+.form-box table {
         width: 100%;
-        padding: 15px ;
+        padding: 15px;
 }
 
-.form-box .name-table{
-        background-color: white; 
+.form-box .name-table {
+        background-color: white;
         height: 6em;
         margin-top: 2em;
-        border-top-left-radius: var(--border_radius) ;
+        border-top-left-radius: var(--border_radius);
         border-top-right-radius: var(--border_radius);
 }
 
-.name-table .user-edit{
+.name-table .user-edit {
         width: 6%;
         padding-top: 0%;
 }
 
-.name-table .user-edit svg{
+.name-table .user-edit svg {
         float: right;
         top: -10px;
-        padding-right:10px;
+        padding-right: 10px;
         color: var(--tertiary);
 }
 
-.table-name{
+.table-name {
         text-align: left;
         font-size: var(--fs18);
         color: var(--secondary);
 }
 
 
-.form-box .form-table{
+.form-box .form-table {
         border-bottom: var(--border_color) 2px solid;
 }
 
-.form-table td, .password-table td{
+.form-table td,
+.password-table td {
         padding: 10px;
         padding-right: 10%;
         width: 50%;
 }
 
-.form-table select span{
+.form-table select span {
         background-size: contain;
         background-position: 50%;
         background-repeat: no-repeat;
 }
 
-td .country-code{
+td .country-code {
         width: 30%;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -61,11 +62,11 @@ td .country-code{
         background-color: var(--border_color);
 }
 
-td .country-code-label{
+td .country-code-label {
         color: var(--background);
 }
 
-td #hp-no{
+td #hp-no {
         width: 70%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -73,30 +74,32 @@ td #hp-no{
         padding-left: 14px;
 }
 
-.country-code,#hp-no{
+.country-code,
+#hp-no {
         display: inline-block;
 }
 
-.password-table span a{
+.password-table span a {
         font-size: var(--fs12);
 }
 
-.update .btn{
+.update .btn {
         width: 6em;
         text-align: center;
-        margin: 0.8em 0 0.8em var(--icon_padding);     
+        margin: 0.8em 0 0.8em var(--icon_padding);
 }
 
-.update{
+.update {
         text-align: right;
         padding-right: 0%;
-    
+
 }
 
-.update p, .update .btn{
+.update p,
+.update .btn {
         display: inline-block;
 }
 
-.bottom_space{
+.bottom_space {
         height: 3em;
 }

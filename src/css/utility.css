@@ -1,22 +1,22 @@
-.link{
+.link {
         color: var(--link_color);
         text-decoration: none;
 }
 
-.with_icon svg{
+.with_icon svg {
         padding-right: var(--icon_padding);
-        font-weight: normal; 
+        font-weight: normal;
         vertical-align: middle;
 }
 
-.form_label{
+.form_label {
         display: block;
         margin: 1.5em 0 0.5em 0;
         font-weight: bold;
         color: var(--secondary);
 }
 
-.form_input{
+.form_input {
         width: 100%;
         border-radius: var(--border_radius);
         box-shadow: 1px 1px var(--shadow);
@@ -28,7 +28,7 @@
         box-sizing: border-box;
 }
 
-.form_button{
+.form_button {
         background-color: var(--highlight);
         color: white;
         font-size: var(--fsbut);
@@ -37,10 +37,10 @@
         padding: 0;
 }
 
-.font_bold{
+.font_bold {
         font-weight: bold;
 }
 
-.span_right{
+.span_right {
         float: right;
 }

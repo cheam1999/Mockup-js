@@ -5,5 +5,5 @@ const Refer = () => {
         </div>
     );
 }
- 
+
 export default Refer;

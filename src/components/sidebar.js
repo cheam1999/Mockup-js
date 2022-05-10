@@ -1,13 +1,13 @@
 import '../css/sidebar.css';
 import '../css/utility.css';
-import {FaInbox,FaBed,FaUserCog,FaRegLifeRing,FaExternalLinkSquareAlt} from "react-icons/fa";
-import {Link} from 'react-router-dom';
+import { FaInbox, FaBed, FaUserCog, FaRegLifeRing, FaExternalLinkSquareAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
-        return ( 
+        return (
                 <nav className="side">
                         <div className="name">
-                                <p className='name_span'>JD</p>               
+                                <p className='name_span'>JD</p>
                         </div>
                         <div className="detail">
                                 <p className="username">John Doe</p>
@@ -39,5 +39,5 @@ const Sidebar = () => {
                 </nav>
         );
 }
- 
+
 export default Sidebar;

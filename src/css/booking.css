@@ -1,23 +1,23 @@
-.description{
+.description {
         margin-bottom: 2em;
 }
 
-.room{
+.room {
         background-color: white;
         border-radius: var(--border_radius);
         box-shadow: 2px 2px 2px 2px var(--shadow);
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 70% 15% 15%;
-        grid-template-areas: 
-        "image details"
-        "image rate"
-        "image email" ;
+        grid-template-areas:
+                "image details"
+                "image rate"
+                "image email";
         margin-bottom: 3em;
-    
+
 }
 
-.room img{
+.room img {
         grid-area: image;
         height: 100%;
         width: 100%;
@@ -27,60 +27,61 @@
         border-bottom-right-radius: 0;
 }
 
-.room-details{
+.room-details {
         grid-area: details;
 }
 
-.rate{
+.rate {
         grid-area: rate;
         margin: 0;
 }
 
-.email{
+.email {
         grid-area: email;
         margin: 0;
 }
 
-.room-details{
+.room-details {
         padding: 2em 3em;
 }
 
-.room-details .waiting{
+.room-details .waiting {
         color: var(--highlight);
         padding-bottom: 14px;
         border-bottom: 2px solid var(--background);
 }
 
-.room-details .superior{
+.room-details .superior {
         color: var(--secondary);
         font-size: var(--fsbut);
 }
 
-.room-details table{
+.room-details table {
         width: 100%;
 }
 
-.room-details table .icon{
+.room-details table .icon {
         width: 5%;
         vertical-align: top;
-        text-align:left;
+        text-align: left;
 }
 
-.room-details table .title{
+.room-details table .title {
         width: 40%;
         text-align: left;
 }
 
-.room-details .details-bold{
+.room-details .details-bold {
         color: var(--secondary);
-        
+
 }
 
-.rate,.email{
+.rate,
+.email {
         background-color: var(--background);
         padding: 2em 3em;
 }
 
-.rate{
+.rate {
         color: #42B72A;
 }
