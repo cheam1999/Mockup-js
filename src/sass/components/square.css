@@ -1,0 +1,13 @@
+.transform {
+  -webkit-transform: rotate(45deg) scaleX(-1);
+          transform: rotate(45deg) scaleX(-1);
+}
+
+.icon svg,
+.icon {
+  position: absolute;
+  margin: 9px;
+  right: 2px;
+  bottom: 0.5px;
+}
+/*# sourceMappingURL=square.css.map */

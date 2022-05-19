@@ -1,40 +1,35 @@
-import logo from '../image/logo.png';
+import logo from "../image/logo.png";
 import { FaBars } from "react-icons/fa";
-import '../css/layout.css';
-import Sidebar from '../components/sidebar.js';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import Booking from './booking';
-import Account from './account';
-import Refer from './refer.js';
-import Contact from './contact.js';
-import FAQ from './faq.js';
+import Sidebar from "../containers/sidebar.js";
+import { BrowserRouter } from "react-router-dom";
+import All_Routes from "../routes.js";
 
 const Layout = () => {
-        return (
-                <BrowserRouter>
-                        <div className="frame">
-                                <div className='container'>
-                                        <div className="header">
-                                                <img src={logo} alt="" />
-                                                <span className='span_right'>Choose a city<FaBars /></span>
-                                        </div>
-                                        <div className="side">
-                                                <Sidebar />
-                                        </div>
-                                        <div className="content">
-                                                <Routes>
-                                                        <Route exact path="/" element={<Account />} />
-                                                        <Route exact path="/booking" element={<Booking />} />
-                                                        <Route exact path="/refer" element={<Refer />} />
-                                                        <Route exact path="/account" element={<Account />} />
-                                                        <Route exact path="/contact" element={<Contact />} />
-                                                        <Route exact path="/faq" element={<FAQ />} />
-                                                </Routes>
-                                        </div>
-                                </div>
+    return (
+        <BrowserRouter>
+            <div className="container ">
+                <nav className="p-3 mb-0 position-fixed width-90">
+                    <img src={logo} className="position-fixed" alt="" />
+                    <span className="float-right text-tertiary weight-semi">
+                        Choose a city
+                        <span className="bg-white p-icon br ml-icon">
+                            <FaBars className="" />
+                        </span>
+                    </span>
+                </nav>
+                <div className="row-grid p-3 pb-0 pt-4 ">
+                    <div className="col-2 ">
+                        <Sidebar />
+                    </div>
+                    <div className="col-10">
+                        <div className="mt-3 pr-5 pl-3">
+                            <All_Routes />
                         </div>
-                </BrowserRouter>
-        );
-}
+                    </div>
+                </div>
+            </div>
+        </BrowserRouter>
+    );
+};
 
 export default Layout;

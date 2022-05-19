@@ -1,0 +1,49 @@
+.form_label {
+    display: block;
+    margin: $base-margin * 2 0 $base-margin 0;
+    font-weight: $font-weight-semi;
+    color: $secondary;
+}
+
+.form_input {
+    width: 100%;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+    height: $base-height * 2;
+    border: none;
+    padding-left: $base-padding;
+    color: $primary;
+    font-size: $font-size-md;
+    box-sizing: border-box;
+}
+
+.form_button {
+    background-color: $highlight;
+    color: white;
+    font-size: $font-size-lg;
+    margin: $base-margin * 2 0 $base-margin * 2 0;
+    // width: 100%;
+    padding: 0;
+}
+
+.form-grid {
+    flex: 6;
+    padding: 0 $base-padding * 2;
+}
+
+.country-code-label {
+    color: $background;
+}
+
+.country-code {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#hp-no {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-table {
+    border-bottom: $border_color 2px solid;
+}

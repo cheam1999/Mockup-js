@@ -1,0 +1,54 @@
+$font: (
+    "font-size": (
+        "prefix": "font",
+        "values": (
+            "sm": $font-size-sm,
+            "md": $font-size-md,
+            "lg": $font-size-lg,
+            "xl": $font-size-xl,
+            "xxl": $font-size-xxl,
+        ),
+    ),
+    "font-weight": (
+        "prefix": "weight",
+        "values": (
+            "default": $font-weight-normal,
+            "normal": $font-weight-normal,
+            "semi": $font-weight-semi,
+            "bold": $font-weight-bold,
+        ),
+    ),
+    "text-align": (
+        "prefix": "text-align",
+        "values": (
+            "left": left,
+            "right": right,
+            "center": center,
+        ),
+    ),
+    "float": (
+        "prefix": "float",
+        "values": (
+            "left": left,
+            "right": right,
+        ),
+    ),
+);
+
+// generate font classes
+@each $property, $map in $font {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $k, $v in $values {
+        @if ($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
+    }
+}

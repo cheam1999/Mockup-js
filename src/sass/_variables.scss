@@ -1,0 +1,50 @@
+// color
+$primary: #59626a !default;
+$secondary: #262626 !default;
+$tertiary: #8a8f9c !default;
+$link_color: #168eea !default;
+$highlight: #786aff !default;
+$border_color: #eaeef3 !default;
+$background: #f5f6f7 !default;
+$shadow: #e6dede !default;
+
+// color palette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "error": red,
+    "link": $link_color,
+    "highlight": $highlight,
+    "border_color": $border_color,
+    "background": $background,
+    "green": #42b72a,
+    "white": white,
+) !default;
+
+// spacing
+$base-icon-padding: 10px !default;
+$base-padding: 1em !default;
+$base-margin: 0.75rem !default;
+
+// borders
+$base-border-radius: 8px !default;
+
+// box-shadow
+$base-box-shadow: 2px 2px 2px 2px $shadow !default;
+
+// font sizes
+$font-size-sm: 12px !default;
+$font-size-md: 14px !default;
+$font-size-lg: 16px !default;
+$font-size-xl: 18px !default;
+$font-size-xxl: 40px !default;
+
+// font weight
+$font-weight-normal: 400 !default;
+$font-weight-semi: 600 !default;
+$font-weight-bold: 700 !default;
+
+// height
+$base-height: 20px !default;
+$base-width: 20px !default;

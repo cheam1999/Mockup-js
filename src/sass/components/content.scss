@@ -1,0 +1,81 @@
+.description {
+    h1 {
+        color: $secondary;
+        font-size: $font-size-xxl;
+        font-weight: $font-weight-normal;
+    }
+    h4 {
+        color: $secondary;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-normal;
+    }
+}
+
+// booking grid
+.room {
+    background-color: white;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 70% 15% 15%;
+    grid-template-areas:
+        "image details"
+        "image rate"
+        "image email";
+    margin-bottom: 3em;
+
+    img {
+        grid-area: image;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: $base-border-radius;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .room-details {
+        grid-area: details;
+
+        .waiting {
+            border-bottom: 2px solid $background;
+        }
+        table .icon {
+            width: 5%;
+            vertical-align: top;
+            text-align: left;
+        }
+    }
+
+    .rate {
+        grid-area: rate;
+        margin: 0;
+    }
+
+    .email {
+        grid-area: email;
+        margin: 0;
+    }
+
+    .room-details table {
+        width: 100%;
+    }
+
+    // .room-details table .icon {
+    //       width: 5%;
+    //       vertical-align: top;
+    //       text-align: left;
+    // }
+
+    .room-details table .title {
+        width: 40%;
+        text-align: left;
+    }
+
+    .rate,
+    .email {
+        background-color: $background;
+        padding: 2em 3em;
+    }
+}

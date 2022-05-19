@@ -1,0 +1,21 @@
+.option {
+    vertical-align: middle;
+
+    .link {
+        padding: $base-padding 0 $base-icon-padding $base-icon-padding;
+        display: block;
+        color: $tertiary;
+        width: max-content;
+        width: 80%;
+        height: $base-height;
+        font-size: $font-size-md;
+        font-weight: $font-weight-semi;
+    }
+}
+
+.option .link:hover {
+    background-color: $highlight;
+    color: white;
+    border-radius: $base-border-radius;
+    position: relative;
+}
