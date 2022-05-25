@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,aAAa,CAAC,UAAU;CACtC;;AASD,AAAA,KAAK,CAAC,GAAG;AACT,KAAK,CAAC;EAPF,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,KAAK;CAMhB",
-    "sources": [
-        "square.scss"
-    ],
-    "names": [],
-    "file": "square.css"
-}

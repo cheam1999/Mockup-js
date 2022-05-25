@@ -4,60 +4,60 @@ $grid-columns: 12;
 $grid-rows: 12;
 
 $grid-gaps: (
-    "0": 0,
-    "1": 10px,
-    "2": 20px,
-    "3": 30px,
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
 );
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // base layout classes
 .container {
-    width: 100%;
-    // max-width: 1200px;
-    margin: 0 0;
-    padding: 0 0;
-    box-sizing: border-box;
+  width: 100%;
+  // max-width: 1200px;
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
 }
 
 .row-grid {
-    display: flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .column-grid {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 // grid gaps
 @each $key, $val in $grid-gaps {
-    .gap-#{$key} > * {
-        padding: $val;
-    }
-    .gap-#{$key} {
-        margin-left: -$val;
-        margin-right: -$val;
-    }
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
 }
 
 // justify content classes
 @each $val in $layout-values {
-    .justify-#{$val} {
-        justify-content: $val;
-    }
+  .justify-#{$val} {
+    justify-content: $val;
+  }
 }
 
 @for $val from 1 through $grid-columns {
-    .col-#{$val} {
-        flex: $val;
-    }
+  .col-#{$val} {
+    flex: $val;
+  }
 }
 
 @for $val from 1 through $grid-rows {
-    .row-#{$val} {
-        flex: $val;
-    }
+  .row-#{$val} {
+    flex: $val;
+  }
 }
 
 // col classes

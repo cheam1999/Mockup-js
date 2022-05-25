@@ -3,35 +3,35 @@
 
 /* reset styles */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: $background;
-    color: $primary;
-    font-size: $font-size-md;
+  font-family: "Open Sans", sans-serif;
+  background-color: $background;
+  color: $primary;
+  font-size: $font-size-md;
 }
 
 a {
-    text-decoration: none;
-    color: $link_color;
+  text-decoration: none;
+  color: $link_color;
 
-    svg {
-        padding-right: $base-icon-padding;
-        font-weight: normal;
-        vertical-align: middle;
-    }
+  svg {
+    padding-right: $base-icon-padding;
+    font-weight: normal;
+    vertical-align: middle;
+  }
 }
 
 p {
-    svg {
-        padding-right: $base-icon-padding;
-        font-weight: normal;
-        vertical-align: middle;
-    }
+  svg {
+    padding-right: $base-icon-padding;
+    font-weight: normal;
+    vertical-align: middle;
+  }
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
